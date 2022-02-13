@@ -1,5 +1,8 @@
 package com.prince.bulletin.java;
 public class Bulletin {
+    //todo chanje tout tablo yo an List ki nan package Java.util la
+    //itilize instance initializer pou mete dummy data nan list ou yo
+  
 
     public static double calculateAverage(Notes [] notes){
 
@@ -46,6 +49,8 @@ public class Bulletin {
     }
 
     public static void showNotes(Notes [] notes){
+         //todo komanse gade sentaks lamda expression yo pa ekzanp sa k senplifye 
+        //notes.foreach(note->System.out.println((note.getSubject().getSubjectName()+" : "+note.getNote()+" / "+note.getSubject().getSubjectCoeff()))
         for (int i =0; i< notes.length; i++){
             System.out.println(notes[i].getSubject().getSubjectName()+" : "+notes[i].getNote()+" / "+notes[i].getSubject().getSubjectCoeff());
         }
